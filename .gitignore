@@ -1,0 +1,7 @@
+# files and folders
+demo_notebook.ipynb
+demo_notebook.pdf
+welcome.txt
+data
+.ipynb_checkpoints
+__pycache__
