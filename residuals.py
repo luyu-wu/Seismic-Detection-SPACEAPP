@@ -13,7 +13,7 @@ drawExceptions = False
 highPass = False
 
 ## Catalogs
-catalog_dir = './data/lunar/training/catalogs/'
+catalog_dir = os.fsencode('./data/lunar/training/catalogs/')
 if mars:
     catalog_dir = './data/mars/training/catalogs/'
 
