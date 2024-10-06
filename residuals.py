@@ -8,8 +8,8 @@ import algorithm
 
 # DEFINITIONS
 mars = False
-showGraphs = False
-drawExceptions = False
+showGraphs = True
+drawExceptions = True
 highPass = False
 
 ## Catalogs
