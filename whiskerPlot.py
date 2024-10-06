@@ -77,27 +77,7 @@ for i in range(length):
 if drawExceptions:
     plt.show()
 
-'''
-norm_ax.set_title("Residuals of Algorithm training")
-norm_ax.bar(range(len(residuals)),height=residuals,width=0.5,linewidth=3)
-norm_ax.grid(axis="y")
-norm_ax.set_ylabel("Time Difference [s]")   
-plt.setp(norm_ax.get_xticklabels(), visible=False)
-log_ax.set_title("Log Axis of Residuals")
-log_ax.bar(range(len(residuals)),height=np.abs(residuals),width=0.5,linewidth=3)
-log_ax.set_yscale("log")
-log_ax.grid(axis="y")
-log_ax.set_ylabel("Time Difference [$log_{10}s$]")   
-log_ax.set_xlabel("Training Data")            
-'''
-fig, norm_ax = plt.subplots()
+plt.boxplot(residuals) 
 
-norm_ax.set_title("Residuals of Algorithm Detection")
-norm_ax.bar(range(len(residuals)),height=residuals,width=0.5,linewidth=3)
-norm_ax.grid(axis="y")
-norm_ax.set_ylabel("Time Difference [s]")   
-norm_ax.set_xlabel("Training Data")          
-
-#plt.setp(norm_ax.get_xticklabels(), visible=False)
 
 plt.show()

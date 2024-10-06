@@ -18,6 +18,8 @@ def forwardMarch(time,vel):
 
     time = np.append(np.zeros(block_large),time)
     vel = np.append(np.zeros(block_large),vel)
+    time = np.append(time,np.repeat(time[-1],block_large))
+    vel = np.append(vel,np.zeros(block_large))
     num_frames = int((len(vel) - block_large)/factor)
 
     rtm_array = np.zeros(num_frames)
