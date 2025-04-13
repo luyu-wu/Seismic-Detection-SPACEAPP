@@ -1,7 +1,6 @@
 # LIBRARIES
 import numpy as np
 import pandas as pd
-from datetime import datetime, timedelta
 import matplotlib.pyplot as plt
 import os
 import algorithm
@@ -21,7 +20,7 @@ counter = 0
 for file in os.listdir(file_dir):
     file_path = file_dir/os.fsdecode(file)
     print("Save",counter)
-    counter +=1;
+    counter +=1
     if os.path.exists(file_path):
 
         data_cat = pd.read_csv(file_path)
